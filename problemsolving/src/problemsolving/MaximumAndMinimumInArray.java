@@ -1,5 +1,8 @@
 package problemsolving;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MaximumAndMinimumInArray {
     public static void main(String[] args) {
 
@@ -9,7 +12,9 @@ public class MaximumAndMinimumInArray {
 
     }
 
-    private static int findMaximumAndMinimumInArray(int[] arrayOfNumbers) {
+    private static Map<String, Integer> findMaximumAndMinimumInArray(int[] arrayOfNumbers) {
+
+        Map<String, Integer> mapOfMinimumAndMaximumNumbers = new HashMap<>();
 
         int count = 0, minimumNumber = 0, maximumNumber = 0;
 
@@ -18,6 +23,7 @@ public class MaximumAndMinimumInArray {
         while (count < arrayOfNumbers.length) {
 
             minimumNumber = arrayOfNumbers[count];
+            maximumNumber = arrayOfNumbers[count];
 
             for (int i = 0; i < arrayOfNumbers.length; i++) {
 
@@ -26,13 +32,21 @@ public class MaximumAndMinimumInArray {
                     minimumNumber = arrayOfNumbers[i];
 
                 }
+                if (maximumNumber < arrayOfNumbers[i]) {
+
+                    maximumNumber = arrayOfNumbers[i];
+
+                }
 
             }
 
             count++;
         }
 
-        return minimumNumber;
+        mapOfMinimumAndMaximumNumbers.put("maximumNumber", maximumNumber);
+        mapOfMinimumAndMaximumNumbers.put("minumumNumber", minimumNumber);
+
+        return mapOfMinimumAndMaximumNumbers;
 
     }
 }
