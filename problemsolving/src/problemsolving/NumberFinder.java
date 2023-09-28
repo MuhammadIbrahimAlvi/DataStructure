@@ -9,7 +9,7 @@ public class NumberFinder {
         System.out.println(findNumberInArray(arrayOfNumbers,6));
     }
 
-    public static int findNumberInArray(int[] arrayOfNumbers, int numberToFind) {
+    private static int findNumberInArray(int[] arrayOfNumbers, int numberToFind) {
         int count =0;
 
         for(int i = 0; i < arrayOfNumbers.length; i++) {
