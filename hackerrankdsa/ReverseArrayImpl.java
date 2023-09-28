@@ -1,4 +1,4 @@
-package hackerrankdsa.reverselist;
+package hackerrankdsa;
 
 import java.util.ArrayList;
 import java.util.List;
