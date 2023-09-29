@@ -3,6 +3,9 @@ package problemsolving;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * How do you find the largest and smallest number in an unsorted integer array?
+ * **/
 public class MaximumAndMinimumInArray {
     public static void main(String[] args) {
 
