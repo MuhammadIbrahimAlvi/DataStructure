@@ -21,8 +21,6 @@ public class MaximumAndMinimumInArray {
 
         int count = 0, minimumNumber = 0, maximumNumber = 0;
 
-        int temp;
-
         while (count < arrayOfNumbers.length) {
 
             minimumNumber = arrayOfNumbers[count];
