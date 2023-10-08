@@ -1,7 +1,5 @@
 # DataStructure
 Data Structure Repository.
-# Array
-Array is a collection of items at contiguous memory spaces. The array is a non primitive data type which stores the similiar type of elements in the memory. 
-```
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
-```
+
+# Description
+Solutions for different problem-solving using simple approaches without any libraries. This repository contains different problems from different platforms like Hackerrank, Leetcode, and GeeksforGeeks and from other websites too.
